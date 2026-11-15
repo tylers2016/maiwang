@@ -1,0 +1,138 @@
+<mods version="3.7" xmlns="http://www.loc.gov/mods/v3" xmlns:h="http://copac.ac.uk/schemas/holdings/v1" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<recordInfo>
+		<recordIdentifier source="UkMaC">175397422</recordIdentifier>
+		<recordCreationDate encoding="iso8601">20260419</recordCreationDate>
+	</recordInfo>
+	<typeOfResource>text</typeOfResource>
+	<originInfo>
+		<issuance>single unit</issuance>
+	</originInfo>
+	<originInfo>
+		<dateIssued encoding="marc">    </dateIssued>
+	</originInfo>
+	<identifier type="isbn">0131103709</identifier>
+	<identifier type="isbn">0131103628</identifier>
+	<classification authority="lcc">QA76.73.C15</classification>
+	<classification authority="ddc">005.133</classification>
+	<name type="personal">
+		<namePart>Kernighan, Brian W (Brian Wilson).</namePart>
+		<role>
+			<roleTerm type="text">creator</roleTerm>
+		</role>
+	</name>
+	<titleInfo>
+		<title>
+			<nonSort>The </nonSort>C programming language</title>
+	</titleInfo>
+	<note type="statement of responsibility">[by] Brian W. Kernighan and Dennis M. Ritchie.</note>
+	<originInfo>
+		<edition>2nd. ed.</edition>
+	</originInfo>
+	<originInfo eventType="publisher">
+		<place>
+			<placeTerm type="text">Englewood Cliffs</placeTerm>
+		</place>
+		<publisher>Prentice Hall.</publisher>
+	</originInfo>
+	<originInfo eventType="publisher">
+		<place>
+			<placeTerm type="text">London</placeTerm>
+		</place>
+		<publisher>Prentice-Hall International</publisher>
+		<dateIssued>c1988</dateIssued>
+	</originInfo>
+	<physicalDescription>
+		<extent>xii,272 p. : ill. ; 25 cm.</extent>
+	</physicalDescription>
+	<note type="bibliography">Includes index.</note>
+	<subject>
+		<topic>C (Computer program language).</topic>
+	</subject>
+	<name type="personal">
+		<namePart>Ritchie, Dennis M.</namePart>
+	</name>
+	<extension>
+		<modsCollection>
+			<mods version="3.7">
+				<recordInfo>
+					<recordIdentifier source="UkMaC">175397422</recordIdentifier>
+					<recordIdentifier source="StAbRGU">991002004129704636</recordIdentifier>
+					<recordCreationDate encoding="iso8601">20260419</recordCreationDate>
+				</recordInfo>
+				<typeOfResource>text</typeOfResource>
+				<originInfo>
+					<issuance>single unit</issuance>
+				</originInfo>
+				<originInfo>
+					<dateIssued encoding="marc">    </dateIssued>
+				</originInfo>
+				<identifier displayLabel="National Bibliography Number" type="015">B8863031</identifier>
+				<identifier type="isbn">0131103709</identifier>
+				<identifier type="isbn">0131103628</identifier>
+				<classification authority="lcc">QA76.73.C15</classification>
+				<classification authority="ddc">005.133</classification>
+				<name type="personal">
+					<namePart>Kernighan, Brian W (Brian Wilson).</namePart>
+					<role>
+						<roleTerm type="text">creator</roleTerm>
+					</role>
+				</name>
+				<titleInfo>
+					<title>
+						<nonSort>The </nonSort>C programming language</title>
+				</titleInfo>
+				<note type="statement of responsibility">[by] Brian W. Kernighan and Dennis M. Ritchie.</note>
+				<originInfo>
+					<edition>2nd. ed.</edition>
+				</originInfo>
+				<originInfo eventType="publisher">
+					<place>
+						<placeTerm type="text">Englewood Cliffs</placeTerm>
+					</place>
+					<publisher>Prentice Hall.</publisher>
+				</originInfo>
+				<originInfo eventType="publisher">
+					<place>
+						<placeTerm type="text">London</placeTerm>
+					</place>
+					<publisher>Prentice-Hall International</publisher>
+					<dateIssued>c1988</dateIssued>
+				</originInfo>
+				<physicalDescription>
+					<extent>xii,272 p. : ill. ; 25 cm.</extent>
+				</physicalDescription>
+				<note type="bibliography">Includes index.</note>
+				<subject>
+					<topic>C (Computer program language).</topic>
+				</subject>
+				<name type="personal">
+					<namePart>Ritchie, Dennis M.</namePart>
+				</name>
+				<physicalDescription>
+					<form authority="marcform">print</form>
+				</physicalDescription>
+				<language>
+					<languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+					<languageTerm type="text">English</languageTerm>
+				</language>
+				<location>
+					<physicalLocation>Robert Gordon University</physicalLocation>
+					<physicalLocation authority="UkMaC">rgu</physicalLocation>
+					<holdingSimple>
+						<copyInformation>
+							<subLocation>University Library: Level 6 – Mobile Shelving – Sequence 2</subLocation>
+							<shelfLocator> 005.133C KER</shelfLocator>
+						</copyInformation>
+					</holdingSimple>
+				</location>
+			</mods>
+		</modsCollection>
+	</extension>
+	<physicalDescription>
+		<form authority="marcform">print</form>
+	</physicalDescription>
+	<language>
+		<languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+		<languageTerm type="text">English</languageTerm>
+	</language>
+</mods>

@@ -1,0 +1,280 @@
+<!DOCTYPE html><html lang="zh-TW"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>脈望 - 校雠</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#1e1c0d",
+                    "on-primary-fixed": "#1b1c1c",
+                    "surface-container-highest": "#e9e3cb",
+                    "secondary-fixed-dim": "#c9c7b5",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#444748",
+                    "primary-fixed": "#e4e2e1",
+                    "inverse-on-surface": "#f7f1d8",
+                    "surface-tint": "#5f5e5e",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "secondary-container": "#e6e3d0",
+                    "on-tertiary-fixed": "#410003",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#faf4db",
+                    "error": "#ba1a1a",
+                    "surface-dim": "#e0dac3",
+                    "primary": "#171818",
+                    "on-tertiary-container": "#ff5a52",
+                    "surface-container-high": "#eee8d0",
+                    "on-secondary-fixed-variant": "#48473a",
+                    "tertiary": "#390002",
+                    "on-background": "#1e1c0d",
+                    "tertiary-container": "#600006",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "on-tertiary-fixed-variant": "#92030f",
+                    "surface": "#fff9e7",
+                    "on-error": "#ffffff",
+                    "primary-container": "#2c2c2c",
+                    "on-primary-fixed-variant": "#474747",
+                    "inverse-surface": "#333121",
+                    "tertiary-fixed": "#ffdad6",
+                    "on-secondary-container": "#666556",
+                    "on-primary-container": "#949393",
+                    "tertiary-fixed-dim": "#ffb4ac",
+                    "surface-variant": "#e9e3cb",
+                    "outline": "#747878",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#fff9e7",
+                    "outline-variant": "#c4c7c7",
+                    "surface-container": "#f4eed6",
+                    "secondary-fixed": "#e6e3d0",
+                    "background": "#fff9e7",
+                    "secondary": "#605f50",
+                    "on-secondary-fixed": "#1c1c11",
+                    "inverse-primary": "#c8c6c5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "section-gap": "64px",
+                    "unit": "4px",
+                    "container-margin": "32px",
+                    "stack-sm": "8px",
+                    "stack-md": "16px",
+                    "stack-lg": "32px"
+            },
+            "fontFamily": {
+                    "label-sm": [
+                            "Work Sans"
+                    ],
+                    "body-md": [
+                            "Newsreader"
+                    ],
+                    "body-lg": [
+                            "Newsreader"
+                    ],
+                    "headline-md": [
+                            "Noto Serif TC"
+                    ],
+                    "display-lg": [
+                            "Noto Serif TC"
+                    ],
+                    "quote-display": [
+                            "Noto Serif TC"
+                    ],
+                    "headline-xl": [
+                            "Noto Serif TC"
+                    ]
+            },
+            "fontSize": {
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.0",
+                                    "letterSpacing": "0.1em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "letterSpacing": "0.01em",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-lg": [
+                            "20px",
+                            {
+                                    "lineHeight": "1.8",
+                                    "letterSpacing": "0.01em",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "letterSpacing": "0.02em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "quote-display": [
+                            "22px",
+                            {
+                                    "lineHeight": "1.8",
+                                    "letterSpacing": "0.02em"
+                            }
+                    ],
+                    "headline-xl": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+        }
+        .silk-border-b {
+            border-bottom: 0.5px solid rgba(44, 44, 44, 0.2);
+        }
+        .silk-border-t {
+            border-top: 0.5px solid rgba(44, 44, 44, 0.2);
+        }
+        .card-texture {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-black text-on-surface min-h-screen flex items-center justify-center antialiased font-body-md text-body-md">
+<div class="w-[390px] h-[884px] bg-[#FDFBF7] relative flex flex-col overflow-hidden shadow-2xl">
+<!-- TopAppBar -->
+<header class="bg-[#FDFBF7] text-[#2C2C2C] font-serif tracking-widest sticky top-0 z-50 w-full flex justify-between items-center px-6 py-4 silk-border-b">
+<button aria-label="Menu" class="hover:bg-[#EAE4CC]/30 transition-colors rounded-full p-2 scale-95 duration-300 ease-in-out">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-2xl font-serif font-bold text-[#2C2C2C]">脈望</h1>
+<button aria-label="Search" class="hover:bg-[#EAE4CC]/30 transition-colors rounded-full p-2 scale-95 duration-300 ease-in-out">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="flex-grow overflow-y-auto px-4 py-8 pb-32">
+<div class="max-w-4xl mx-auto">
+<div class="mb-10 text-center">
+<h2 class="font-headline-xl text-headline-xl text-primary mb-2">校雠</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">審校經典，考訂異同</p>
+</div>
+<!-- Grid of Books -->
+<div class="grid grid-cols-3 gap-x-4 gap-y-10">
+<!-- Book Item 1 -->
+<div class="group cursor-pointer">
+<div class="relative w-full aspect-[2/3] bg-surface-variant card-texture mb-3 overflow-hidden border-[0.5px] border-outline-variant group-hover:border-primary transition-colors duration-300">
+<img alt="Book Cover" class="w-full h-full object-cover mix-blend-multiply opacity-90 transition-transform duration-700 group-hover:scale-105" data-alt="antique chinese book with thread binding, delicate texture, soft warm lighting, minimalist composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpqXE7Eg3hR-cmjQmQ7RQABQNtMqP6NHgQhWazGLUJeRg7Dwz_TYmPt0WdY-p2qisGKrqx-wKZWOHwRwFcanv__eBk03pKDvHY1AUvBelkLoOCS6x3lyXT4HFSRcNnEAsTgyGnoAF24Sr_cbKCSDS6M9ZWBMy1iQF5kzJkfhH9YDj0Vqx_g8Mbeephc9SyGNjsZW_BlWxQr2Mu4IESSfwf1M85bpE2-jdaxzAr0BudjNsiiqpS1gH_h7nVUuPjXfVVBV1WBiBUQhvp">
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+</div>
+<div class="flex flex-col items-center text-center">
+<h3 class="font-headline-md text-base font-medium text-primary mb-1">莊子集釋</h3>
+<p class="font-label-sm text-[10px] text-on-surface-variant">清 · 郭慶藩</p>
+</div>
+</div>
+<!-- Book Item 2 -->
+<div class="group cursor-pointer">
+<div class="relative w-full aspect-[2/3] bg-surface-variant card-texture mb-3 overflow-hidden border-[0.5px] border-outline-variant group-hover:border-primary transition-colors duration-300">
+<img alt="Book Cover" class="w-full h-full object-cover mix-blend-multiply opacity-90 transition-transform duration-700 group-hover:scale-105" data-alt="aged textured paper surface with subtle ink washes, traditional chinese aesthetic, soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh53wQmNaTMbkE9ry75bWug7iWJA82jSP1ReMiWrY87htQx3DaSHX1thNcN7GdMWCQb6J3uwEwM6MWXDGmNPQvuTKt3BWhnkh1iPkQvubL7E2A3CaCEg0pi8RRodV8AxI1T-3nErFV8c_D_QRQAzHHPod83msrIuMCPH4oaFkQAxvRaU5uclo8dWPvIPQumdCASImCaAmVnI9Z23kU8RtwW5dcH7ypqWHOXZ0A9auSoohNl44VuUZFzcM8e173VIDdmSEnO1TD7Vl6">
+</div>
+<div class="flex flex-col items-center text-center">
+<h3 class="font-headline-md text-base font-medium text-primary mb-1">楚辭補注</h3>
+<p class="font-label-sm text-[10px] text-on-surface-variant">宋 · 洪興祖</p>
+</div>
+</div>
+<!-- Book Item 3 -->
+<div class="group cursor-pointer">
+<div class="relative w-full aspect-[2/3] bg-surface-variant card-texture mb-3 overflow-hidden border-[0.5px] border-outline-variant group-hover:border-primary transition-colors duration-300">
+<img alt="Book Cover" class="w-full h-full object-cover mix-blend-multiply opacity-90 transition-transform duration-700 group-hover:scale-105" data-alt="minimalist abstract ink brush strokes on rice paper, elegant and timeless, black and white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzcK0_OTNIu0i1aVrGc_i9qzUtgX6BSV0OTQZzbL7IEBnD5byW2s9aTuYr_cdDqR1_Wlwju3tEV52-sJl91etJPocmM6MEjeDlR7v6ccP1Ai0a2WJt3E7WxKWRr4N96AG-Nqcj8Si2uekjZ4div81PvUh04kcW7U2-RWjNJLQuOZkHA6-aHzqmIrr-O3zEKDisgspkays9_dh5hhnv2yG-JbDeWXYs7Ao6UyFmNwkKRSXV2fPv9WX9G6yJ0Qj2yEpdip7FtyaBOqQ3">
+</div>
+<div class="flex flex-col items-center text-center">
+<h3 class="font-headline-md text-base font-medium text-primary mb-1">文心雕龍注</h3>
+<p class="font-label-sm text-[10px] text-on-surface-variant">清 · 黃叔琳</p>
+</div>
+</div>
+<!-- Book Item 4 -->
+<div class="group cursor-pointer">
+<div class="relative w-full aspect-[2/3] bg-surface-variant card-texture mb-3 overflow-hidden border-[0.5px] border-outline-variant group-hover:border-primary transition-colors duration-300">
+<img alt="Book Cover" class="w-full h-full object-cover mix-blend-multiply opacity-90 transition-transform duration-700 group-hover:scale-105" data-alt="close up of ancient text manuscript, faded characters, historical atmosphere, warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXepvkITn74t2WZqn2n0M-66qvsnpMmghxWQ_Tx_wZwB6ohPY5dSHUtL8f20fK23_BGa_bjfQi2Va7FhwefPdgK39NGsEW7T-fkibbwrcrAfdpDa6A8pgXZAQfUmxJH8flyZvpyEXHrVaE9FMxX1ciJnriO4_QDRTZ4AGjiFP9UFNNCJY9I7BmrRy4Z5zzlmyoVLJ0UnecsU8fFupXWgqbZeyfjikFgMTxvMMAenI5iSWv3aCZrfO4tGqf1YdzWe9QjGOGn_PGYKeR">
+</div>
+<div class="flex flex-col items-center text-center">
+<h3 class="font-headline-md text-base font-medium text-primary mb-1">史記考證</h3>
+<p class="font-label-sm text-[10px] text-on-surface-variant">日 · 瀧川資言</p>
+</div>
+</div>
+<!-- Book Item 5 -->
+<div class="group cursor-pointer">
+<div class="relative w-full aspect-[2/3] bg-surface-variant card-texture mb-3 overflow-hidden border-[0.5px] border-outline-variant group-hover:border-primary transition-colors duration-300">
+<img alt="Book Cover" class="w-full h-full object-cover mix-blend-multiply opacity-90 transition-transform duration-700 group-hover:scale-105" data-alt="abstract composition of bamboo leaves shadows on rice paper, serene mood, minimal color palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWK0nu9vMXAP120NSxRx8SWQmAySHyt8mOWZkklVmEPsFNJ2rCpI6dpQ_J5edWKZz1HBl-tfhWq56SKU0zo1y7uUCLk0JmdUTN1w1x8qAN-TFsf0s9MnaXguO2UH6yosDcBfspVR2pV8kGul29A3TulbZfu27MTOa5maHy4zx3LxPNaw5JJkt2Jezrm75Yh5DNePB2HPT7GnjGu5ejEJSwQCy-Pay6v36SP1sHzlbG-ayX07UWB59utOcgoH91gh8LNiIqLzP4L85a">
+</div>
+<div class="flex flex-col items-center text-center">
+<h3 class="font-headline-md text-base font-medium text-primary mb-1">說文解字注</h3>
+<p class="font-label-sm text-[10px] text-on-surface-variant">清 · 段玉裁</p>
+</div>
+</div>
+<!-- Book Item 6 -->
+<div class="group cursor-pointer">
+<div class="relative w-full aspect-[2/3] bg-surface-variant card-texture mb-3 overflow-hidden border-[0.5px] border-outline-variant group-hover:border-primary transition-colors duration-300">
+<div class="w-full h-full bg-[#EAE4CC] flex items-center justify-center mix-blend-multiply opacity-90 transition-transform duration-700 group-hover:scale-105">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant/50" data-icon="add">add</span>
+</div>
+</div>
+<div class="flex flex-col items-center text-center">
+<h3 class="font-headline-md text-base font-medium text-primary mb-1">新增典籍</h3>
+<p class="font-label-sm text-[10px] text-on-surface-variant">開啟新局</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="bg-[#FDFBF7] text-[#B22222] font-serif text-xs absolute bottom-0 left-0 w-full z-50 flex justify-around items-center px-6 pb-safe bg-opacity-95 backdrop-blur-sm transition-all duration-500 ease-out silk-border-t h-[72px]">
+<button class="flex flex-col items-center justify-center text-[#2C2C2C]/60 pt-1 hover:text-[#B22222] group flex-1 h-full">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform" data-icon="auto_stories">auto_stories</span>
+<span>藝文</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#B22222] font-bold border-t-2 border-[#B22222] pt-1 hover:text-[#B22222] flex-1 h-full">
+<span class="material-symbols-outlined mb-1" data-icon="edit_note" style="font-variation-settings: 'FILL' 1;">edit_note</span>
+<span>校雠</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#2C2C2C]/60 pt-1 hover:text-[#B22222] group flex-1 h-full">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform" data-icon="account_tree">account_tree</span>
+<span>圖譜</span>
+</button>
+</nav>
+</div>
+</body></html>

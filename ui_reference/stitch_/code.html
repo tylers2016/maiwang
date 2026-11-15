@@ -1,0 +1,260 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Maiwang - Search Results</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Noto+Serif:ital,wght@0,100..900;1,100..900&amp;family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed-dim": "#ffb4ac",
+                      "on-tertiary-container": "#ff5a52",
+                      "inverse-on-surface": "#f7f1d8",
+                      "inverse-surface": "#333121",
+                      "outline": "#747878",
+                      "on-secondary-fixed-variant": "#48473a",
+                      "on-primary-fixed": "#1b1c1c",
+                      "on-secondary-fixed": "#1c1c11",
+                      "on-primary": "#ffffff",
+                      "secondary": "#605f50",
+                      "on-error": "#ffffff",
+                      "secondary-fixed-dim": "#c9c7b5",
+                      "on-tertiary-fixed": "#410003",
+                      "surface-bright": "#fff9e7",
+                      "surface-container": "#f4eed6",
+                      "primary-container": "#2c2c2c",
+                      "background": "#fff9e7",
+                      "error-container": "#ffdad6",
+                      "surface-variant": "#e9e3cb",
+                      "surface-dim": "#e0dac3",
+                      "inverse-primary": "#c8c6c5",
+                      "on-tertiary-fixed-variant": "#92030f",
+                      "tertiary": "#390002",
+                      "secondary-fixed": "#e6e3d0",
+                      "primary-fixed": "#e4e2e1",
+                      "on-secondary": "#ffffff",
+                      "surface-tint": "#5f5e5e",
+                      "surface": "#fff9e7",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-container": "#600006",
+                      "on-background": "#1e1c0d",
+                      "tertiary-fixed": "#ffdad6",
+                      "primary-fixed-dim": "#c8c6c5",
+                      "primary": "#171818",
+                      "outline-variant": "#c4c7c7",
+                      "on-surface-variant": "#444748",
+                      "surface-container-lowest": "#ffffff",
+                      "error": "#ba1a1a",
+                      "surface-container-low": "#faf4db",
+                      "surface-container-high": "#eee8d0",
+                      "on-primary-container": "#949393",
+                      "on-primary-fixed-variant": "#474747",
+                      "on-error-container": "#93000a",
+                      "surface-container-highest": "#e9e3cb",
+                      "secondary-container": "#e6e3d0",
+                      "on-surface": "#1e1c0d",
+                      "on-secondary-container": "#666556"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-lg": "32px",
+                      "container-margin": "32px",
+                      "unit": "4px",
+                      "stack-md": "16px",
+                      "stack-sm": "8px",
+                      "section-gap": "64px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "display-lg": [
+                              "Noto Serif"
+                      ],
+                      "body-md": [
+                              "Newsreader"
+                      ],
+                      "body-lg": [
+                              "Newsreader"
+                      ],
+                      "headline-md": [
+                              "Noto Serif"
+                      ],
+                      "quote-display": [
+                              "Noto Serif"
+                      ],
+                      "label-sm": [
+                              "Work Sans"
+                      ],
+                      "headline-xl": [
+                              "Noto Serif"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "1.8",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "quote-display": [
+                              "22px",
+                              {
+                                      "lineHeight": "1.8",
+                                      "letterSpacing": "0.02em"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-xl": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            /* Subtle Xuan paper texture overlay */
+            background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noise)" opacity="0.03"/></svg>');
+            background-color: #fff9e7; /* surface */
+        }
+        
+        .pulse-line {
+            width: 2px;
+            background: linear-gradient(to bottom, transparent, #c9c7b5, transparent);
+            position: absolute;
+            left: 50%;
+            height: 100%;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .silk-border {
+            border: 0.5px solid #1e1c0d; /* on-background */
+        }
+
+        .silk-border-red {
+            border: 0.5px solid #92030f; /* on-tertiary-fixed-variant */
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased min-h-screen">
+<!-- TopAppBar -->
+<header class="bg-[#EAE4CC] dark:bg-stone-900 font-serif tracking-wide text-lg docked full-width top-0 border-b-[0.5px] border-[#2C2C2C]/20 border-b-[0.5px] border-stone-300 dark:border-stone-700 flat no shadows transition-opacity duration-300 ease-in-out flex justify-between items-center w-full px-8 py-4 sticky z-40">
+<button class="text-[#2C2C2C] dark:text-stone-200 hover:bg-[#2C2C2C]/5 dark:hover:bg-white/5 p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="text-[#B22222] dark:text-red-500 font-serif font-bold text-2xl">脈望</h1>
+<div class="w-10"></div> <!-- Spacer to balance the back button -->
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-5xl mx-auto px-container-margin pt-stack-lg flex flex-col gap-section-gap relative">
+<div class="pulse-line hidden md:block"></div>
+<!-- Search Header Context -->
+<section class="flex flex-col gap-stack-md text-center max-w-2xl mx-auto">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Search Results for ISBN</p>
+<h2 class="font-display-lg text-display-lg text-on-surface">978-7-02-000220-7</h2>
+<div class="w-16 h-[1px] bg-on-tertiary-fixed-variant mx-auto mt-4"></div>
+</section>
+<!-- Results Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Result Item 1 -->
+<article class="flex flex-row gap-stack-md bg-surface-container-low p-stack-md silk-border relative group hover:bg-surface-container transition-colors duration-300">
+<!-- Book Tab / Yuer -->
+<div class="absolute -left-[1px] top-4 w-1 h-8 bg-on-tertiary-fixed-variant"></div>
+<div class="w-32 shrink-0 aspect-[2/3] silk-border overflow-hidden relative">
+<img alt="Cover of Dream of the Red Chamber" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Traditional Chinese book cover with classic illustration, vermilion and ink tones, textured rice paper look" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIMWF6fxc9KxBHak19yNjpj7uiujbfPHweOBj6TUh2NorZUyBLWXPbn_ruqMjVHwsTDcc1VHermzc161hFjVtmON9Eo8cVxfnfrH_LGGp86pc55mcmv58HOaiv07UhZqothJzxeqT61OhBrN41Xl5WPWCGVAa3U8JSz93tgsG-Koen6qVzXPifgeXic33se8MQeFtkPU8KhbZsHJN7yddFY5J5zv5_k472VzbpWxUa_27PIU3NkaAu91ravH89rAyKyxO9PKcukmJp">
+</div>
+<div class="flex flex-col justify-between py-2">
+<div class="flex flex-col gap-stack-sm">
+<span class="font-label-sm text-label-sm text-on-tertiary-fixed-variant">Classic Literature</span>
+<h3 class="font-headline-md text-headline-md text-on-surface leading-tight">Dream of the Red Chamber</h3>
+<p class="font-body-md text-body-md text-on-surface-variant italic">Cao Xueqin</p>
+</div>
+<div class="flex items-center gap-2 mt-stack-md">
+<button class="bg-surface border border-outline px-4 py-2 font-label-sm text-label-sm text-on-surface hover:bg-surface-variant transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]" data-icon="menu_book">menu_book</span>
+                            Preview
+                        </button>
+</div>
+</div>
+</article>
+<!-- Result Item 2 -->
+<article class="flex flex-row gap-stack-md bg-surface-container-low p-stack-md silk-border relative group hover:bg-surface-container transition-colors duration-300">
+<!-- Book Tab / Yuer -->
+<div class="absolute -left-[1px] top-4 w-1 h-8 bg-outline"></div>
+<div class="w-32 shrink-0 aspect-[2/3] silk-border overflow-hidden relative">
+<img alt="Cover of The Classic of Mountains and Seas" class="w-full h-full object-cover grayscale opacity-90 group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist abstract book cover, monochrome ink wash painting style, mysterious mountains and rivers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfapWNxc2QWUfKZEY_Jzntrxwy70DbJVJQVrBmjOxwF9TnHbfNj_WCTlUAS9xU7dzvqRpAm6F_NI6-Wj4HuNwvQK-zqs80LBaHowQ2jdqFkj3DbS4vWsVJyBbW-GfPidd5MgXz5qJwN0vgAMllDwcC0Qks4jUINwetU3Hn213LqxNvkESARckV5QmPio_jx_6gdhiEYN9yMG61QQjPt0FR8UtvmNnQvweiR3hjIKi_xex3JwoIOytz28yqMzk5RYMrQjuJIJsf60sl">
+</div>
+<div class="flex flex-col justify-between py-2">
+<div class="flex flex-col gap-stack-sm">
+<span class="font-label-sm text-label-sm text-outline">Mythology</span>
+<h3 class="font-headline-md text-headline-md text-on-surface leading-tight">The Classic of Mountains and Seas</h3>
+<p class="font-body-md text-body-md text-on-surface-variant italic">Anonymous (Ancient Compilation)</p>
+</div>
+<div class="flex items-center gap-2 mt-stack-md">
+<button class="bg-tertiary text-on-tertiary border border-tertiary px-4 py-2 font-label-sm text-label-sm hover:opacity-90 transition-opacity flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]" data-icon="bookmark_add">bookmark_add</span>
+                            Collect
+                        </button>
+</div>
+</div>
+</article>
+</section>
+</main>
+<!-- BottomNavBar -->
+</body></html>

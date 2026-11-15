@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>脉望历 - 每日回顾</title>
+    <style>
+        :root {
+            --canvas-width: 1080px;
+            --canvas-height: 1570px;
+            --ink: #1b1111;
+            --font-serif: "SimSun", "STSong", "Songti SC", "Noto Serif CJK SC", serif;
+            --font-sans: "Arial Black", "Microsoft YaHei", "PingFang SC", sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        #canvas {
+            width: var(--canvas-width);
+            height: var(--canvas-height);
+            position: relative;
+            overflow: hidden;
+            margin: 20px 0;
+            box-sizing: border-box;
+            color: var(--ink);
+            font-family: var(--font-serif);
+            background:
+                linear-gradient(#000, #000) 36px 72px / 902px 8px no-repeat,
+                linear-gradient(#000, #000) 36px 72px / 8px 1468px no-repeat,
+                linear-gradient(#000, #000) 37px 1532px / 991px 9px no-repeat,
+                #fff;
+        }
+
+        .brand-badge {
+            position: absolute;
+            top: 72px;
+            right: 53px;
+            width: 73px;
+            height: 218px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #000;
+            color: #fff;
+            font-size: 47px;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 8px;
+            writing-mode: vertical-rl;
+        }
+
+        .top-date-section,
+        .main-container {
+            position: absolute;
+            inset: 0;
+        }
+
+        .date-gregorian-meta {
+            position: absolute;
+            top: 139px;
+            left: 116px;
+            width: 100px;
+            height: 470px;
+        }
+
+        .date-gregorian-meta .month {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 88px;
+            font-weight: 700;
+            line-height: 1.04;
+            letter-spacing: 0;
+            writing-mode: vertical-rl;
+        }
+
+        .date-gregorian-meta .weekday {
+            position: absolute;
+            top: 238px;
+            right: 0;
+            font-size: 34px;
+            font-weight: 700;
+            line-height: 1.05;
+            letter-spacing: 2px;
+            writing-mode: vertical-rl;
+            white-space: nowrap;
+        }
+
+        .date-lunar-meta {
+            position: absolute;
+            top: 139px;
+            left: 244px;
+            color: var(--ink);
+            font-size: 31px;
+            font-weight: 700;
+            line-height: 1.08;
+            letter-spacing: 2px;
+            writing-mode: vertical-rl;
+        }
+
+        .date-gregorian-day {
+            position: absolute;
+            top: 95px;
+            left: 291px;
+            color: var(--ink);
+            font-family: var(--font-sans);
+            font-size: 405px;
+            font-weight: 900;
+            line-height: 0.9;
+            letter-spacing: -19px;
+        }
+
+        .left-column,
+        .right-column {
+            position: absolute;
+            inset: 0;
+        }
+
+        .image-wrapper {
+            position: absolute;
+            top: 675px;
+            left: 105px;
+            width: 690px;
+            height: 380px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-wrapper img {
+            display: block;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .fortune-wrapper {
+            position: absolute;
+            top: 1276px;
+            left: 90px;
+            width: 720px;
+        }
+
+        .fortune-title {
+            margin: 0 0 18px;
+            color: var(--ink);
+            font-size: 175px;
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: 5px;
+            white-space: nowrap;
+        }
+
+        .fortune-content {
+            margin-left: 0;
+            color: var(--ink);
+            font-size: 39px;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+
+        .right-column {
+            top: 421px;
+            right: 53px;
+            bottom: auto;
+            left: auto;
+            width: 150px;
+            height: 845px;
+        }
+
+        .highlight-category {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 19px;
+        }
+
+        .highlight-category span {
+            width: 55px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #000;
+            color: #fff;
+            font-size: 45px;
+            font-weight: 500;
+            line-height: 1;
+        }
+
+        .highlight-text {
+            position: absolute;
+            top: 176px;
+            right: -5px;
+            width: 150px;
+            height: 670px;
+            color: var(--ink);
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 1.32;
+            letter-spacing: 2px;
+            text-align: left;
+            writing-mode: vertical-rl;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="canvas">
+
+        <div class="brand-badge">脉望历</div>
+
+        <div class="top-date-section">
+            <div class="date-gregorian-meta">
+                <div class="month">__GREGORIAN_MONTH__</div>
+                <div class="weekday">__GREGORIAN_WEEKDAY__</div>
+            </div>
+            <div class="date-lunar-meta">__LUNAR_DATE__</div>
+            <div class="date-gregorian-day">__GREGORIAN_DAY__</div>
+        </div>
+
+        <div class="main-container">
+
+            <div class="left-column">
+                <div class="image-wrapper">
+                    <img src="__IMAGE_PATH__" width="__IMAGE_WIDTH__" height="__IMAGE_HEIGHT__" alt="Daily Image">
+                </div>
+                <div class="fortune-wrapper">
+                    <div class="fortune-title">__FORTUNE_TITLE__</div>
+                    <div class="fortune-content">__FORTUNE_CONTENT__</div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="highlight-category">__HIGHLIGHT_CATEGORY__</div>
+                <div class="highlight-text">
+                    __HIGHLIGHT_TEXT__
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

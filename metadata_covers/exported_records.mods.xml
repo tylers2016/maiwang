@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns="http://www.loc.gov/mods/v3">
+<ns0:mods xmlns:ns0="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.5" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd">
+          <ns0:titleInfo>
+            <ns0:nonSort>The</ns0:nonSort>
+            <ns0:title>C programming language</ns0:title>
+          </ns0:titleInfo>
+          <ns0:name type="personal" usage="primary">
+            <ns0:namePart>Kernighan, Brian W.</ns0:namePart>
+            <ns0:role>
+              <ns0:roleTerm type="text">author.</ns0:roleTerm>
+            </ns0:role>
+          </ns0:name>
+          <ns0:name type="personal">
+            http://id.loc.gov/authorities/names/n77018721
+            <ns0:namePart>Ritchie, Dennis M.</ns0:namePart>
+            <ns0:namePart type="date">1941-2011</ns0:namePart>
+            <ns0:role>
+              <ns0:roleTerm type="text">author.</ns0:roleTerm>
+            </ns0:role>
+          </ns0:name>
+          <ns0:typeOfResource>text</ns0:typeOfResource>
+          <ns0:genre authority="marcgt">bibliography</ns0:genre>
+          <ns0:genre authority="rdacontent">text</ns0:genre>
+          <ns0:genre authority="2">Handbook</ns0:genre>
+          <ns0:genre authority="aat">handbooks.</ns0:genre>
+          <ns0:genre authority="fast">Handbooks and manuals</ns0:genre>
+          <ns0:genre authority="gtt">Textbooks (form)</ns0:genre>
+          <ns0:genre authority="humord">Lærebøker.</ns0:genre>
+          <ns0:genre authority="humord">Programmering.</ns0:genre>
+          <ns0:genre authority="lcgft">Handbooks and manuals.</ns0:genre>
+          <ns0:genre authority="rvmgf">Guides et manuels.</ns0:genre>
+          <ns0:originInfo>
+            <ns0:place>
+              <ns0:placeTerm authority="marccountry" type="code">nju</ns0:placeTerm>
+            </ns0:place>
+            <ns0:dateIssued encoding="marc">1988</ns0:dateIssued>
+            <ns0:copyrightDate encoding="marc">1988</ns0:copyrightDate>
+            <ns0:edition>Second edition.</ns0:edition>
+            <ns0:issuance>monographic</ns0:issuance>
+          </ns0:originInfo>
+          <ns0:originInfo eventType="publication">
+            <ns0:place>
+              <ns0:placeTerm type="text">Englewood Cliffs, N.J. :</ns0:placeTerm>
+            </ns0:place>
+            <ns0:publisher>Prentice Hall,</ns0:publisher>
+            <ns0:dateIssued>[1988]</ns0:dateIssued>
+          </ns0:originInfo>
+          <ns0:language>
+            <ns0:languageTerm authority="iso639-2b" type="code">eng</ns0:languageTerm>
+          </ns0:language>
+          <ns0:physicalDescription>
+            <ns0:form authority="marcform">print</ns0:form>
+            <ns0:form authority="marccategory">text</ns0:form>
+            <ns0:form authority="marcsmd">regular print</ns0:form>
+            <ns0:extent>xii, 272 pages : illustrations ; 25 cm</ns0:extent>
+            <ns0:form authority="rdamedia" type="media">unmediated</ns0:form>
+            <ns0:form authority="rdacarrier" type="carrier">volume</ns0:form>
+          </ns0:physicalDescription>
+          <ns0:abstract type="Summary">Introduces the features of the C programming language, discusses data types, variables, operators, control flow, functions, pointers, arrays, and structures, and looks at the UNIX system interface.</ns0:abstract>
+          <ns0:tableOfContents>ch. 1. A tutorial introduction -- ch. 2. Types, operators, and expressions -- ch. 3. Control flow -- ch. 4. Functions and program structure -- ch. 5. Pointers and arrays -- ch. 6. Structures -- ch. 7. Input and output -- ch. 8. The UNIX system interface.</ns0:tableOfContents>
+          <ns0:note altRepGroup="00" type="statement of responsibility">Brian W. Kernighan, Dennis M. Ritchie.</ns0:note>
+          <ns0:note>Includes index.</ns0:note>
+          <ns0:subject authority="lcsh">
+            <ns0:topic>C (Computer program language)</ns0:topic>
+          </ns0:subject>
+          <ns0:subject authority="mesh">
+            <ns0:topic>Computers</ns0:topic>
+          </ns0:subject>
+          <ns0:subject authority="mesh">
+            <ns0:topic>Software</ns0:topic>
+          </ns0:subject>
+          <ns0:subject authority="rvm">
+            <ns0:topic>C (Langage de programmation)</ns0:topic>
+          </ns0:subject>
+          <ns0:subject authority="rvm">
+            <ns0:topic>Ordinateurs</ns0:topic>
+          </ns0:subject>
+          <ns0:subject authority="rvm">
+            <ns0:topic>Logiciels</ns0:topic>
+          </ns0:subject>
+          <ns0:subject authority="aat">
+            <ns0:topic>computers</ns0:topic>
+          </ns0:subject>
+          <ns0:subject authority="aat">
+            <ns0:topic>software</ns0:topic>
+          </ns0:subject>
+          <ns0:subject authority="bcl">
+            <ns0:topic>54.53 programming languages</ns0:topic>
+          </ns0:subject>
+          <ns0:subject authority="fast">
+            <ns0:topic>C (Computer program language)</ns0:topic>
+          </ns0:subject>
+          <ns0:subject authority="gnd">
+            <ns0:topic>C</ns0:topic>
+          </ns0:subject>
+          <ns0:subject authority="gtt">
+            <ns0:topic>C (programmeertaal)</ns0:topic>
+          </ns0:subject>
+          <ns0:subject authority="larpcal">
+            <ns0:topic>Linguagem De Programacao (Outras)</ns0:topic>
+          </ns0:subject>
+          <ns0:subject authority="nasat">
+            <ns0:topic>Computers</ns0:topic>
+          </ns0:subject>
+          <ns0:subject authority="nasat">
+            <ns0:topic>C++ (programming language)</ns0:topic>
+          </ns0:subject>
+          <ns0:subject authority="nli">
+            <ns0:topic>C (Computer program language)</ns0:topic>
+          </ns0:subject>
+          <ns0:subject authority="swd">
+            <ns0:topic>C &lt;Programmiersprache&gt;</ns0:topic>
+          </ns0:subject>
+          <ns0:subject authority="tekord">
+            <ns0:topic>C</ns0:topic>
+          </ns0:subject>
+          <ns0:subject>
+            <ns0:topic>Programming languages</ns0:topic>
+          </ns0:subject>
+          <ns0:classification authority="lcc">QA76.73.C15 K47 1988</ns0:classification>
+          <ns0:classification authority="nlm">QA 76.73.C15 K39c 1988</ns0:classification>
+          <ns0:classification authority="udc">681.3.06:800.92</ns0:classification>
+          <ns0:classification authority="udc">681.3.061</ns0:classification>
+          <ns0:classification authority="udc">681.3.04C</ns0:classification>
+          <ns0:classification authority="udc">004.43</ns0:classification>
+          <ns0:classification authority="udc">681.3.06</ns0:classification>
+          <ns0:classification authority="udc">681.3.04</ns0:classification>
+          <ns0:classification authority="udc">518.579.1.K31</ns0:classification>
+          <ns0:classification authority="udc">519.682.8</ns0:classification>
+          <ns0:classification authority="udc">800.92</ns0:classification>
+          <ns0:classification authority="udc">518.562</ns0:classification>
+          <ns0:classification authority="udc">518 .579.1.K31.</ns0:classification>
+          <ns0:classification authority="udc">681.32.06(C)</ns0:classification>
+          <ns0:classification authority="udc">681.3</ns0:classification>
+          <ns0:classification authority="ddc" edition="19">005.13/3</ns0:classification>
+          <ns0:classification authority="acmccs">D.3</ns0:classification>
+          <ns0:classification authority="acmccs">D.3.2</ns0:classification>
+          <ns0:classification authority="bcl">54.53</ns0:classification>
+          <ns0:classification authority="blsrissc">PN 46(C10)</ns0:classification>
+          <ns0:classification authority="bliss">AZN PLA C</ns0:classification>
+          <ns0:location>
+            <ns0:url displayLabel="Table of contents" usage="primary display">http://www.gbv.de/dms/hebis-darmstadt/toc/10657762.pdf</ns0:url>
+          </ns0:location>
+          <ns0:location>
+            <ns0:url displayLabel="electronic resource" note="Additional Information at Google Books">http://books.google.com/books?isbn=0131103709</ns0:url>
+          </ns0:location>
+          <ns0:relatedItem displayLabel="Online version:" type="otherFormat">
+            <ns0:titleInfo>
+              <ns0:title>C programming language</ns0:title>
+            </ns0:titleInfo>
+            <ns0:name>
+              <ns0:namePart>Kernighan, Brian W.</ns0:namePart>
+            </ns0:name>
+            <ns0:originInfo>
+              <ns0:publisher>Englewood Cliffs, N.J. : Prentice Hall, ©1988</ns0:publisher>
+              <ns0:edition>2nd ed.</ns0:edition>
+            </ns0:originInfo>
+            <ns0:identifier type="local">(OCoLC)573196545</ns0:identifier>
+          </ns0:relatedItem>
+          <ns0:relatedItem displayLabel="Online version:" type="otherFormat">
+            <ns0:titleInfo>
+              <ns0:title>C programming language</ns0:title>
+            </ns0:titleInfo>
+            <ns0:name>
+              <ns0:namePart>Kernighan, Brian W.</ns0:namePart>
+            </ns0:name>
+            <ns0:originInfo>
+              <ns0:publisher>Englewood Cliffs, N.J. : Prentice Hall, ©1988</ns0:publisher>
+              <ns0:edition>2nd ed.</ns0:edition>
+            </ns0:originInfo>
+            <ns0:identifier type="local">(OCoLC)607895187</ns0:identifier>
+          </ns0:relatedItem>
+          <ns0:relatedItem type="series">
+            <ns0:titleInfo>
+              <ns0:title>Prentice-Hall software series</ns0:title>
+            </ns0:titleInfo>
+          </ns0:relatedItem>
+          <ns0:identifier type="isbn">0131103709</ns0:identifier>
+          <ns0:identifier type="isbn">9780131103702</ns0:identifier>
+          <ns0:identifier type="isbn">0131103628</ns0:identifier>
+          <ns0:identifier type="isbn">9780131103627</ns0:identifier>
+          <ns0:identifier type="isbn">0131158171</ns0:identifier>
+          <ns0:identifier type="isbn">9780131158177</ns0:identifier>
+          <ns0:identifier type="lccn">88005934</ns0:identifier>
+          <ns0:identifier type="oclc">17650642</ns0:identifier>
+          <ns0:identifier type="oclc">ocm17650642</ns0:identifier>
+          <ns0:relatedItem>
+            <ns0:location>
+              <ns0:url note="Additional Information at Google Books">http://books.google.com/books?isbn=0131103709</ns0:url>
+            </ns0:location>
+          </ns0:relatedItem>
+          <ns0:recordInfo>
+            <ns0:descriptionStandard>rda</ns0:descriptionStandard>
+            <ns0:recordContentSource authority="marcorg">DLC</ns0:recordContentSource>
+            <ns0:recordCreationDate encoding="marc">880303</ns0:recordCreationDate>
+            <ns0:recordChangeDate encoding="iso8601">20260225213012.0</ns0:recordChangeDate>
+            <ns0:recordIdentifier>991009232479702901</ns0:recordIdentifier>
+            <ns0:recordOrigin>Converted from MARCXML to MODS version 3.5 using MARC21slim2MODS3-5.xsl
+				(Revision 1.112 2018/06/21)</ns0:recordOrigin>
+            <ns0:languageOfCataloging>
+              <ns0:languageTerm authority="iso639-2b" type="code">eng</ns0:languageTerm>
+            </ns0:languageOfCataloging>
+          </ns0:recordInfo>
+        </ns0:mods>
+      
+</modsCollection>

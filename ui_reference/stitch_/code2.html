@@ -1,0 +1,235 @@
+<!DOCTYPE html><html lang="zh-TW"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Text Recognition - Maiwang</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&amp;family=Newsreader:wght@400;500&amp;family=Work+Sans:wght@500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-dim": "#e0dac3",
+                      "surface-tint": "#5f5e5e",
+                      "background": "#fff9e7",
+                      "surface-bright": "#fff9e7",
+                      "on-tertiary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "inverse-on-surface": "#f7f1d8",
+                      "primary-container": "#2c2c2c",
+                      "on-secondary-fixed": "#1c1c11",
+                      "error": "#ba1a1a",
+                      "on-surface-variant": "#444748",
+                      "on-error-container": "#93000a",
+                      "tertiary-container": "#600006",
+                      "on-tertiary-fixed-variant": "#92030f",
+                      "surface-container-high": "#eee8d0",
+                      "secondary-fixed": "#e6e3d0",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary-container": "#ff5a52",
+                      "on-secondary-container": "#666556",
+                      "on-primary-fixed-variant": "#474747",
+                      "on-background": "#1e1c0d",
+                      "inverse-surface": "#333121",
+                      "surface-container": "#f4eed6",
+                      "surface-container-lowest": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "on-secondary-fixed-variant": "#48473a",
+                      "on-primary-fixed": "#1b1c1c",
+                      "tertiary": "#390002",
+                      "tertiary-fixed": "#ffdad6",
+                      "surface": "#fff9e7",
+                      "on-primary": "#ffffff",
+                      "secondary-container": "#e6e3d0",
+                      "primary-fixed": "#e4e2e1",
+                      "outline": "#747878",
+                      "on-surface": "#1e1c0d",
+                      "inverse-primary": "#c8c6c5",
+                      "surface-container-highest": "#e9e3cb",
+                      "secondary": "#605f50",
+                      "primary": "#171818",
+                      "tertiary-fixed-dim": "#ffb4ac",
+                      "secondary-fixed-dim": "#c9c7b5",
+                      "on-primary-container": "#949393",
+                      "outline-variant": "#c4c7c7",
+                      "surface-container-low": "#faf4db",
+                      "primary-fixed-dim": "#c8c6c5",
+                      "surface-variant": "#e9e3cb",
+                      "on-tertiary-fixed": "#410003"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "4px",
+                      "stack-lg": "32px",
+                      "stack-sm": "8px",
+                      "container-margin": "32px",
+                      "stack-md": "16px",
+                      "section-gap": "64px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "quote-display": [
+                              "Noto Serif"
+                      ],
+                      "label-sm": [
+                              "Work Sans"
+                      ],
+                      "headline-md": [
+                              "Noto Serif"
+                      ],
+                      "display-lg": [
+                              "Noto Serif"
+                      ],
+                      "headline-xl": [
+                              "Noto Serif"
+                      ],
+                      "body-lg": [
+                              "Newsreader"
+                      ],
+                      "body-md": [
+                              "Newsreader"
+                      ]
+              },
+              "fontSize": {
+                      "quote-display": [
+                              "22px",
+                              {
+                                      "lineHeight": "1.8",
+                                      "letterSpacing": "0.02em"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-xl": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "20px",
+                              {
+                                      "lineHeight": "1.8",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .noise-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.4;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased flex flex-col h-screen overflow-hidden relative">
+<div class="noise-overlay z-0"></div>
+<!-- TopAppBar -->
+<header class="flex justify-between items-center w-full px-8 h-16 bg-[#FDFBF7] dark:bg-stone-900 text-[#2C2C2C] dark:text-stone-100 font-serif text-lg tracking-tight uppercase border-b-[0.5px] border-[#2C2C2C]/20 dark:border-stone-700 z-10 sticky top-0 docked full-width top-0">
+<button class="hover:bg-[#EAE4CC]/50 dark:hover:bg-stone-800 p-2 rounded-full transition-transform duration-150 active:scale-95 flex items-center justify-center">
+<span class="material-symbols-outlined text-[#2C2C2C]/60 dark:text-stone-400" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-bold text-[#8B2E2E] dark:text-[#A52A2A] text-headline-md font-headline-md tracking-widest uppercase">Text Recognition</h1>
+<div class="w-10"></div> <!-- Spacer for centering -->
+</header>
+<!-- Main Canvas / Image Area -->
+<main class="flex-1 relative overflow-hidden z-0 flex items-center justify-center bg-surface-container-high/30 p-container-margin">
+<!-- Document Wrapper -->
+<div class="relative w-full max-w-lg aspect-[3/4] bg-surface-container-lowest shadow-[0_4px_24px_rgba(0,0,0,0.08)] border-[0.5px] border-surface-tint/20 rounded overflow-hidden">
+<!-- The Scanned Image -->
+<img alt="A page from a classical book with dense printed text, slightly yellowed paper with a subtle texture" class="w-full h-full object-cover opacity-90 grayscale-[20%] sepia-[10%]" data-alt="Close-up of a page from an antique book with dense, elegant serif typography printed on slightly textured, warm-toned paper, soft natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxmRzqSgKDxqNtF8JH9pbZBrdWTmqzDnUH-2GHTSH3CD-QzVl9P9_y3V9M1K2S1IRWTO_HhywpGvEA8ZEoKGLRg8gBJ2iYFT3949HQOywHf8u-5DDB4WVV416LzdRAMPUDu-1W1jWUlYD_wv_6NCHs0Ck9Q9OcIoLE4eMjS7_GfwbPYe6paY-cZAoUU0BZP_puLkmqL2rmFIAXYY_BU2r_stNGxS19-oLguuFHM1IC-xPSEQR7UtCfFmY9Y7b1XBT_tVW3ywPLKl_J">
+<!-- Highlight Overlays -->
+<!-- Block 1 -->
+<div class="absolute top-[20%] left-[15%] w-[60%] h-[8%] bg-[#ADD8E6] bg-opacity-40 border border-[#ADD8E6] mix-blend-multiply cursor-pointer hover:bg-opacity-50 transition-all">
+<div class="absolute -top-2 -right-2 w-4 h-4 bg-tertiary rounded-full border-2 border-surface-container-lowest"></div>
+<div class="absolute -bottom-2 -left-2 w-4 h-4 bg-tertiary rounded-full border-2 border-surface-container-lowest"></div>
+</div>
+<!-- Block 2 -->
+<div class="absolute top-[32%] left-[15%] w-[70%] h-[12%] bg-[#ADD8E6] bg-opacity-40 border border-[#ADD8E6] mix-blend-multiply cursor-pointer hover:bg-opacity-50 transition-all">
+<div class="absolute -top-2 -right-2 w-4 h-4 bg-tertiary rounded-full border-2 border-surface-container-lowest"></div>
+<div class="absolute -bottom-2 -left-2 w-4 h-4 bg-tertiary rounded-full border-2 border-surface-container-lowest"></div>
+</div>
+<!-- Block 3 -->
+<div class="absolute top-[50%] left-[15%] w-[45%] h-[6%] bg-[#ADD8E6] bg-opacity-40 border border-[#ADD8E6] mix-blend-multiply cursor-pointer hover:bg-opacity-50 transition-all">
+<div class="absolute -top-2 -right-2 w-4 h-4 bg-tertiary rounded-full border-2 border-surface-container-lowest"></div>
+<div class="absolute -bottom-2 -left-2 w-4 h-4 bg-tertiary rounded-full border-2 border-surface-container-lowest"></div>
+</div>
+<!-- Focus Corners (Camera Reticle) -->
+<div class="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-primary/40"></div>
+<div class="absolute top-4 right-4 w-8 h-8 border-t-2 border-r-2 border-primary/40"></div>
+<div class="absolute bottom-4 left-4 w-8 h-8 border-b-2 border-l-2 border-primary/40"></div>
+<div class="absolute bottom-4 right-4 w-8 h-8 border-b-2 border-r-2 border-primary/40"></div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<!-- Note: Following semantic rules, this screen is transactional/task-focused (processing a scan), 
+         so normally a global nav is suppressed. However, the JSON explicitly provided a BottomNavBar 
+         specifically tailored for this view ("Re-scan", "Confirm"), so we render it as requested. -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-10 pb-8 pt-4 bg-[#FDFBF7] dark:bg-stone-900 border-t-[0.5px] border-[#2C2C2C]/10 dark:border-stone-700 text-[#8B2E2E] dark:text-[#A52A2A] font-serif text-xs font-medium tracking-widest docked full-width bottom-0">
+<!-- Re-scan (Inactive style based on intent) -->
+<button class="flex flex-col items-center justify-center text-[#2C2C2C]/60 dark:text-stone-400 px-6 py-2 hover:bg-[#EAE4CC] dark:hover:bg-stone-800 transition-opacity w-1/2">
+<span class="material-symbols-outlined mb-2" data-icon="camera">camera</span>
+<span class="font-label-sm text-label-sm uppercase">Re-scan</span>
+</button>
+<!-- Confirm (Active style representing the primary action) -->
+<button class="flex flex-col items-center justify-center bg-[#8B2E2E] text-white px-6 py-2 rounded-none border border-[#2C2C2C] hover:bg-[#EAE4CC] dark:hover:bg-stone-800 transition-opacity active:opacity-80 w-1/2 ml-4 shadow-sm">
+<span class="material-symbols-outlined mb-2 text-white" data-icon="check_circle">check_circle</span>
+<span class="font-label-sm text-label-sm uppercase text-white">Confirm</span>
+</button>
+</nav>
+</body></html>
